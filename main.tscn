@@ -1,5 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://cl3ekv3mrbd2w"]
+[gd_scene load_steps=3 format=3 uid="uid://cl3ekv3mrbd2w"]
 
 [ext_resource type="PackedScene" uid="uid://cirtg6u63iuqj" path="res://riko.tscn" id="1_s7amp"]
+[ext_resource type="PackedScene" uid="uid://yneq4nv3kbjo" path="res://map/map.tscn" id="2_tmy7f"]
 
-[node name="CharacterBody2D" instance=ExtResource("1_s7amp")]
+[node name="Node2D" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Riko" parent="." instance=ExtResource("1_s7amp")]
+position = Vector2(81, 21)
+
+[node name="TileMap" parent="." instance=ExtResource("2_tmy7f")]
