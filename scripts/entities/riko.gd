@@ -8,14 +8,14 @@ extends CharacterBody2D
 @export_group("Melee Attack")
 @export var MELEE_COOLDOWN = 1
 @export var MELEE_ARC = 90 # in degrees?
-var projectile = preload("res://projectile.tscn")
+var projectile = preload("res://scenes/entities/projectile.tscn")
 func _physics_process(_delta):
-	look_at(get_global_mouse_position())
+	#look_at(get_global_mouse_position())
 	var x_direction = Input.get_axis("move_left", "move_right")
 	var y_direction = Input.get_axis('move_up', 'move_down')
 	
 	velocity = Vector2(x_direction, y_direction).normalized() * SPEED
-	#velocity.y /= 2
+	#awvelocity.y /= 2
 	
 	move_and_slide()
 func fire_bullet(target):

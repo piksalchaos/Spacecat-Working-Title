@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cl3ekv3mrbd2w"]
+
+[ext_resource type="PackedScene" uid="uid://cirtg6u63iuqj" path="res://scenes/entities/riko.tscn" id="1_tdlu3"]
+[ext_resource type="PackedScene" uid="uid://yneq4nv3kbjo" path="res://map/map.tscn" id="2_dyqu7"]
+[ext_resource type="PackedScene" uid="uid://cdnqa1ebgbloe" path="res://scenes/entities/enemies/dumb_ghost.tscn" id="3_k5jt6"]
+
+[node name="Node2D" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Riko" parent="." instance=ExtResource("1_tdlu3")]
+position = Vector2(81, 21)
+
+[node name="TileMap" parent="." instance=ExtResource("2_dyqu7")]
+
+[node name="DumbGhost" parent="." instance=ExtResource("3_k5jt6")]
+position = Vector2(-143.198, -24.2859)

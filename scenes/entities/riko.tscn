@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cirtg6u63iuqj"]
 
-[ext_resource type="Script" path="res://riko.gd" id="1_micba"]
+[ext_resource type="Script" path="res://scripts/entities/riko.gd" id="1_micba"]
 [ext_resource type="Texture2D" uid="uid://cy04bvurjefk4" path="res://icon.svg" id="2_21cnx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8e4rm"]
