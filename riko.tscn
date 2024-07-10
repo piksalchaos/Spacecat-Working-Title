@@ -13,10 +13,6 @@ radius = 18.5
 scale = Vector2(2, 2)
 collision_layer = 2
 script = ExtResource("1_micba")
-SPEED = null
-BULLET_SPEED = null
-MELEE_COOLDOWN = null
-MELEE_ARC = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 y_sort_enabled = true

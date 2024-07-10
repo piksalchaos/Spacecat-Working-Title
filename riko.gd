@@ -15,7 +15,7 @@ func _physics_process(_delta):
 	var y_direction = Input.get_axis('move_up', 'move_down')
 	
 	velocity = Vector2(x_direction, y_direction).normalized() * SPEED
-	velocity.y /= 2
+	#velocity.y /= 2
 	
 	move_and_slide()
 func fire_bullet(target):
@@ -30,7 +30,7 @@ func melee_attack():
 		if acos(target_vector.dot((enemy.position - position).normalized)) > deg_to_rad(MELEE_ARC):
 			continue
 		if enemy.has_node("HealthComponent"):
-			
+			pass
 func _input(event):
 	if event.is_action_pressed("shoot"):
 		fire_bullet(get_global_mouse_position())
