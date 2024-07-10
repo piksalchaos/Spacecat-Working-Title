@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdnqa1ebgbloe"]
+
+[ext_resource type="Texture2D" uid="uid://d61fgjc78c70" path="res://enemies/dumb ghost/ghost.png" id="1_r65m5"]
+[ext_resource type="PackedScene" uid="uid://b6km1k8g54ibm" path="res://health_component.tscn" id="2_f5fwq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1fte0"]
+size = Vector2(160, 160)
+
+[node name="DumbGhost" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_1fte0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 2
+texture = ExtResource("1_r65m5")
+
+[node name="HealthComponent" parent="." instance=ExtResource("2_f5fwq")]
