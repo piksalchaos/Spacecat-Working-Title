@@ -1,9 +1,9 @@
 [gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bbgj8ef2026xi"]
 
-[ext_resource type="Texture2D" uid="uid://b47ekngsfdk51" path="res://map/iso_tileset.png" id="1_mejus"]
+[ext_resource type="Texture2D" uid="uid://b47ekngsfdk51" path="res://map/iso_tileset.png" id="1_j707p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3b87d"]
-texture = ExtResource("1_mejus")
+texture = ExtResource("1_j707p")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, -8)
@@ -13,7 +13,7 @@ texture_region_size = Vector2i(32, 32)
 1:0/0/texture_origin = Vector2i(0, -8)
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_0/angular_velocity = 0.0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, 8, -16.1751, 15.3796, 0.0883865, 23.6881, 15.468, 16.0867)
 2:0/0 = 0
 2:0/0/texture_origin = Vector2i(0, -8)
 2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -39,6 +39,10 @@ texture_region_size = Vector2i(32, 32)
 6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:0/0/physics_layer_0/angular_velocity = 0.0
 6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
 
 [resource]
 tile_shape = 1
