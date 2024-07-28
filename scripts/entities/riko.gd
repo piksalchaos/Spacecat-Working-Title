@@ -22,7 +22,7 @@ func _physics_process(_delta):
 func fire_bullet(target):
 	var new_projectile = projectile.instantiate()
 	new_projectile.position = position
-	new_projectile.linear_velocity = (target - position).normalized() * BULLET_SPEED
+	new_projectile.linear_velocity = (get_local_mouse_position()).normalized() * BULLET_SPEED
 	new_projectile.look_at(target)
 	get_parent().add_child(new_projectile)
 
