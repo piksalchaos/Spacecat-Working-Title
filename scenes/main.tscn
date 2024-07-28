@@ -7,10 +7,12 @@
 [node name="Node2D" type="Node2D"]
 y_sort_enabled = true
 
-[node name="Riko" parent="." instance=ExtResource("1_tdlu3")]
-position = Vector2(81, 21)
-
 [node name="TileMap" parent="." instance=ExtResource("2_dyqu7")]
 
-[node name="DumbGhost" parent="." instance=ExtResource("3_k5jt6")]
-position = Vector2(-143.198, -24.2859)
+[node name="DumbGhost" parent="TileMap" instance=ExtResource("3_k5jt6")]
+position = Vector2(-71.599, -12.143)
+scale = Vector2(0.5, 0.5)
+
+[node name="Riko2" parent="TileMap" instance=ExtResource("1_tdlu3")]
+position = Vector2(40.5, 10.5)
+scale = Vector2(1, 1)
