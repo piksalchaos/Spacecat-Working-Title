@@ -15,10 +15,9 @@ layer_0/tile_data = PackedInt32Array(0, 2, 0, 1, 2, 0, 65536, 2, 0, 131071, 2, 0
 layer_1/name = "layer1"
 layer_1/y_sort_enabled = true
 layer_1/y_sort_origin = 1
-layer_1/z_index = 1
+layer_1/z_index = 3
 layer_1/tile_data = PackedInt32Array(-65538, 65538, 0, -65537, 65538, 0, -131072, 65538, 0)
 script = ExtResource("2_6eh20")
 
 [node name="Riko" parent="." instance=ExtResource("2_232jm")]
 position = Vector2(40.5, 10.5)
-scale = Vector2(1, 1)

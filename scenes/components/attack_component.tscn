@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cerd8l56rxojm"]
+
+[sub_resource type="GDScript" id="GDScript_8j8kj"]
+script/source = "extends Node
+
+class_name AttackComponent
+@export var attack_damage = 10
+"
+
+[node name="AttackComponent" type="Node"]
+script = SubResource("GDScript_8j8kj")
